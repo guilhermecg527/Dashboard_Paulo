@@ -15,7 +15,7 @@ export default function Agenda() {
   const [eventos] = useState(mockAgendamentos);
 
   return (
-    <div className="rounded-xl bg-white dark:bg-zinc-900 p-6 shadow-sm space-y-4">
+    <div className="rounded-xl bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 p-6 shadow-sm space-y-4 text-gray-700 dark:text-gray-100">
       <h2 className="text-xl font-bold">Reuniões Agendadas</h2>
       {eventos.map((evento, index) => {
         const data = new Date(evento.data);
@@ -29,9 +29,9 @@ export default function Agenda() {
             <div className={`w-3 h-3 rounded ${evento.cor}`} />
             <div className="flex-1">
               <div className="font-medium">{evento.nome}</div>
-              <div className="text-sm text-zinc-500">{dataFormatada}</div>
+              <div className="text-sm text-gray-500">{dataFormatada}</div>
             </div>
-            <div className="text-sm font-semibold text-zinc-700 dark:text-zinc-300">{hora}</div>
+            <div className="text-sm font-semibold text-gray-700 dark:text-gray-300">{hora}</div>
           </div>
         );
       })}

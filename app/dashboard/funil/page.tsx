@@ -23,9 +23,9 @@ const data = [
 
 export default function Funil() {
   return (
-    <div className="p-6">
+    <div className="p-6 rounded-xl bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-100 shadow-sm">
       <GraficoFunilConversao />
-
     </div>
+
   );
 }

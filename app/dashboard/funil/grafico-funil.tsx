@@ -1,4 +1,3 @@
-
 "use client";
 
 import {
@@ -7,8 +6,7 @@ import {
   LabelList,
   Tooltip,
   ResponsiveContainer,
-  Legend,
-  defs,
+  Legend,  
 } from "recharts";
 
 const data = [
@@ -21,7 +19,7 @@ const data = [
 const CustomTooltip = ({ active, payload }: any) => {
   if (active && payload && payload.length) {
     return (
-      <div className="bg-white dark:bg-zinc-800 p-2 rounded shadow text-sm border border-zinc-300 dark:border-zinc-700">
+      <div className="bg-gray-100 dark:bg-gray-800 p-2 rounded shadow text-sm border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-100">
         <p><strong>{payload[0].payload.etapa}</strong></p>
         <p>{`Quantidade: ${payload[0].payload.valor}`}</p>
       </div>
@@ -32,7 +30,7 @@ const CustomTooltip = ({ active, payload }: any) => {
 
 export default function GraficoFunilConversao() {
   return (
-    <div className="p-6">
+    <div className="p-6 rounded-xl bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-100 shadow-sm">
       <h3 className="text-lg font-semibold mb-4">Funil de Conversão</h3>
       <ResponsiveContainer width="100%" height={400}>
         <FunnelChart>
