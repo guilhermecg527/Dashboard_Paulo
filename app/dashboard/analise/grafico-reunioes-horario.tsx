@@ -2,8 +2,6 @@
 import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, LabelList
 } from "recharts";
-import { useState } from "react";
-import PeriodoFiltro from "@/components/PeriodoFiltro";
 
 const gerarDados = () =>
   Array.from({ length: 24 }, (_, i) => ({
@@ -23,14 +21,14 @@ const CustomTooltip = ({ active, payload, label }: any) => {
   return null;
 };
 
-export default function GraficoReunioesHorario() {
-  const [dias, setDias] = useState(7);
-  const data = gerarDados(); // Dados simulados
+export default function GraficoReunioesHorario({ dias }: { dias: number }) {
+  // "dias" será utilizado futuramente para filtrar dados reais
+  
+  const data = gerarDados(); // Dados simulados por enquanto
 
   return (
     <div className="p-6 rounded-xl bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-100 shadow-sm">
       <h3 className="text-lg font-semibold mb-2">2. Reuniões Agendadas por Horário</h3>
-      <PeriodoFiltro dias={dias} onChange={setDias} />
 
       <ResponsiveContainer width="100%" height={300}>
         <BarChart data={data}>
