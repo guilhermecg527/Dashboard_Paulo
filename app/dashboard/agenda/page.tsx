@@ -16,13 +16,14 @@ export default function Agenda() {
 
   return (
     <div className="rounded-xl bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 p-6 shadow-sm space-y-4 text-gray-700 dark:text-gray-100">
-      <h2 className="text-xl font-bold">Reuniões Agendadas</h2>
-      {eventos.map((evento, index) => {
-        const data = new Date(evento.data);
-        const dataFormatada = format(data, "d 'de' MMMM 'de' yyyy", {
-          locale: ptBR,
-        });
-        const hora = format(data, "HH:mm");
+      <div className="p-6 space-y-4"></div>
+        <h2 className="text-xl font-bold">Reuniões Agendadas</h2>
+        {eventos.map((evento, index) => {
+          const data = new Date(evento.data);
+          const dataFormatada = format(data, "d 'de' MMMM 'de' yyyy", {
+            locale: ptBR,
+          });
+          const hora = format(data, "HH:mm");
 
         return (
           <div key={index} className="flex items-center gap-4 border-t pt-4 first:border-t-0 first:pt-0">

@@ -19,7 +19,7 @@ export default function AnaliseResumida() {
 
       <PeriodoFiltro dias={dias} onChange={setDias} />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-6">
         <div className="rounded-xl border p-4">
           <GraficoRespostasHorario dias={dias} />
         </div>

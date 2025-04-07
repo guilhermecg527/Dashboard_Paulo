@@ -28,7 +28,7 @@ export default function GraficoAgendadosMesmoDia({ dias }: { dias: number }) {
 
   return (
     <div className="p-6 rounded-xl bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-100 shadow-sm">
-      <h3 className="text-lg font-semibold mb-2">4. Leads que Responderam e Agendaram no Mesmo Dia</h3>
+      <h3 className="text-lg font-semibold mb-2">6. Responderam e Agendaram no Mesmo Dia</h3>
 
       <ResponsiveContainer width="100%" height={300}>
         <BarChart data={data}>

@@ -14,14 +14,13 @@ export default function Dashboard() {
       {/* Primeira linha: Visão Geral e Agenda lado a lado */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch">
         {/* Visão Geral */}
-        <div className="bg-white dark:bg-zinc-900 rounded-xl p-6 shadow-sm h-full flex flex-col justify-between">
+        <div className="bg-white dark:bg-zinc-900 rounded-xl p-6 shadow-sm flex flex-col h-full min-h-[100%]">
 
           <VisaoGeral />
         </div>
 
         {/* Agenda */}
-        <div className="bg-white dark:bg-zinc-900 rounded-xl p-6 shadow-sm h-full flex flex-col justify-between">
-          <h2 className="text-lg font-semibold mb-4">Agenda</h2>
+        <div className="bg-white dark:bg-zinc-900 rounded-xl p-6 shadow-sm flex flex-col h-full min-h-[100%]">
           <Agenda />
         </div>
       </div>
