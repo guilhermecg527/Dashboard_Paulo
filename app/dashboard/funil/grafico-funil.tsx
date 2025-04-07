@@ -36,20 +36,20 @@ export default function GraficoFunilConversao() {
         <FunnelChart>
           <defs>
             <linearGradient id="colorAbordagens" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stopColor="#93c5fd" />
-              <stop offset="100%" stopColor="#60a5fa" />
+              <stop offset="0%" stopColor="#d1d5db" />
+              <stop offset="100%" stopColor="#d1d5db" />
             </linearGradient>
             <linearGradient id="colorRespostas" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stopColor="#60a5fa" />
-              <stop offset="100%" stopColor="#3b82f6" />
+              <stop offset="0%" stopColor="#9ca3af" />
+              <stop offset="100%" stopColor="#9ca3af" />
             </linearGradient>
             <linearGradient id="colorLeads" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stopColor="#3b82f6" />
-              <stop offset="100%" stopColor="#2563eb" />
+              <stop offset="0%" stopColor="#6b7280" />
+              <stop offset="100%" stopColor="#6b7280" />
             </linearGradient>
             <linearGradient id="colorReunioes" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stopColor="#2563eb" />
-              <stop offset="100%" stopColor="#1d4ed8" />
+              <stop offset="0%" stopColor="#4b5563" />
+              <stop offset="100%" stopColor="#4b5563" />
             </linearGradient>
           </defs>
           <Tooltip content={<CustomTooltip />} />
