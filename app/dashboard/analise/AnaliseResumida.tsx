@@ -9,7 +9,6 @@ import GraficoReunioesHorario from "./grafico-reunioes-horario";
 import GraficoReunioesSemana from "./grafico-reunioes-semana";
 import GraficoConversaoMesmoDia from "./grafico-conversao";
 import GraficoAgendadosMesmoDia from "./grafico-agendados-mesmo-dia";
-import TempoEntreRespostaEAgendamento from "./tempo-entre";
 
 export default function AnaliseResumida() {
   const [dias, setDias] = useState(7);
@@ -39,10 +38,6 @@ export default function AnaliseResumida() {
         <div className="rounded-xl border p-4">
           <GraficoAgendadosMesmoDia dias={dias} />
         </div>
-      </div>
-
-      <div className="rounded-xl border p-4">
-        <TempoEntreRespostaEAgendamento />
       </div>
     </div>
   );

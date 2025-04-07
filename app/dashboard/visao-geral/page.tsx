@@ -20,8 +20,31 @@ export default function VisaoGeral() {
         <Card title="Respostas Recebidas" value="120" />
         <Card title="Leads Qualificados" value="60" />
         <Card title="Reuniões Agendadas" value="30" />
-        <Card title="Taxa de Resposta" value="60%" />
-        <Card title="Taxa de Conversão" value="12.5%" />
+        <Card 
+          title="Taxa de Resposta" 
+          value="60%" 
+          tooltip="% de respostas sobre as abordagens" 
+        />
+        <Card 
+          title="Abordados x Interessados" 
+          value="20%" 
+          tooltip="% de interessados sobre as abordagens"
+        />
+        <Card 
+          title="Interessados x Agendamentos" 
+          value="40%" 
+          tooltip="% de reuniões agendadas sobre os interessados" 
+        />
+        <Card 
+          title="Taxa de Conversão" 
+          value="12.5%" 
+          tooltip="% de reuniões agendadas sobre as abordagens" 
+        />
+        <Card 
+          title="Resposta e Agendamento" 
+          value="3d 2h 27min" 
+          tooltip="Tempo médio entre primeira resposta e agendamento de reunião" 
+        />
       </div>
     </div>
   );

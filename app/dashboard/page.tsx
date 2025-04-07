@@ -15,7 +15,7 @@ export default function Dashboard() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch">
         {/* Visão Geral */}
         <div className="bg-white dark:bg-zinc-900 rounded-xl p-6 shadow-sm h-full flex flex-col justify-between">
-          <h2 className="text-lg font-semibold mb-4">Visão Geral</h2>
+
           <VisaoGeral />
         </div>
 
@@ -28,7 +28,7 @@ export default function Dashboard() {
 
       {/* Funil centralizado */}
       <div className="rounded-xl border p-4">
-        <h2 className="text-lg font-bold mb-4">Funil de Conversão</h2>
+
         <Funil />
       </div>
         <div className="rounded-xl border p-4">
