@@ -3,8 +3,8 @@ import { ReactNode } from "react";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Dashboard Paulo",
-  description: "Painel de Indicadores",
+  title: "AutoClient",
+  description: "Dashboard",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
